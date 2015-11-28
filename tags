@@ -1,0 +1,463 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADBPopen	android/adb_shell.py	/^class ADBPopen:$/;"	c	inherits:
+ADBShell	android/adb_shell.py	/^class ADBShell:$/;"	c	inherits:
+ADBShell	android/inputemu.py	/^from .adb_shell import ADBShell$/;"	i
+ADBShell	android_assistant.py	/^from android.adb_shell import ADBShell$/;"	i
+AndroidAssistant	android_assistant.py	/^class AndroidAssistant:$/;"	c	inherits:
+AndroidSignal	android/adb_shell.py	/^class AndroidSignal:$/;"	c	inherits:
+BUILDING_DLL	platdefs.h	/^    #define BUILDING_DLL$/;"	d
+CACHE_DEPTH_LIMIT	threes.cpp	/^static const int CACHE_DEPTH_LIMIT  = 6;$/;"	v	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+COL_MASK	threes.h	/^#define COL_MASK /;"	d
+CONFIGS	ocr/devices.py	/^CONFIGS = {$/;"	v
+CONFIGS	ocr/ocr.py	/^from devices import CONFIGS$/;"	i
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CPROB_THRESH_BASE	threes.cpp	/^static const float CPROB_THRESH_BASE = 0.0001f;$/;"	v	file:
+CTRL_C	android/adb_shell.py	/^CTRL_C = b'\\x03'$/;"	v
+CTRL_D	android/adb_shell.py	/^CTRL_D = b'\\x04'$/;"	v
+CXX	Makefile	/^CXX = g++$/;"	m
+CXXCPP	Makefile	/^CXXCPP = g++ -E$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2 -std=gnu++11 -O3 -Wall -Wextra -fPIC$/;"	m
+CXXLD	Makefile	/^CXXLD = $(CXX)$/;"	m
+Counter	base_assistant.py	/^from collections import Counter$/;"	i
+Counter	threes_ai_c.py	/^    from collections import Counter$/;"	i
+DECK_1	threes.h	/^#define DECK_1(/;"	d
+DECK_2	threes.h	/^#define DECK_2(/;"	d
+DECK_3	threes.h	/^#define DECK_3(/;"	d
+DECK_MAXVAL	threes.h	/^#define DECK_MAXVAL(/;"	d
+DECK_SUB_1	threes.h	/^#define DECK_SUB_1(/;"	d
+DECK_SUB_2	threes.h	/^#define DECK_SUB_2(/;"	d
+DECK_SUB_3	threes.h	/^#define DECK_SUB_3(/;"	d
+DECK_WITH_MAXVAL	threes.h	/^#define DECK_WITH_MAXVAL(/;"	d
+DELTA_EPOCH_IN_MICROSECS	platdefs.h	/^#define DELTA_EPOCH_IN_MICROSECS /;"	d
+DLL_PUBLIC	platdefs.h	/^      #define DLL_PUBLIC /;"	d
+DLL_PUBLIC	platdefs.h	/^    #define DLL_PUBLIC /;"	d
+DLL_PUBLIC	platdefs.h	/^    #define DLL_PUBLIC$/;"	d
+DNAME	ocr/ocr.py	/^DNAME = os.path.dirname(__file__)$/;"	v
+DO_COL	threes.cpp	/^#define DO_COL(/;"	d	file:
+DO_COL	threes.cpp	/^#undef DO_COL$/;"	d	file:
+DO_LINE	threes.cpp	/^#define DO_LINE(/;"	d	file:
+DO_LINE	threes.cpp	/^#undef DO_LINE$/;"	d	file:
+DO_ROW	threes.cpp	/^#define DO_ROW(/;"	d	file:
+DO_ROW	threes.cpp	/^#undef DO_ROW$/;"	d	file:
+DeckReconstructor	base_assistant.py	/^from deck_reconstruct import DeckReconstructor$/;"	i
+DeckReconstructor	deck_reconstruct.py	/^class DeckReconstructor:$/;"	c	inherits:
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+ExemplarMatcher	ocr/ocr.py	/^class ExemplarMatcher:$/;"	c	inherits:
+FOREACH_TILE	threes.h	/^#define FOREACH_TILE(/;"	d
+HAVE_ARC4RANDOM_UNIFORM	config.h	/^#define HAVE_ARC4RANDOM_UNIFORM /;"	d
+HAVE_CXX11	config.h	/^#define HAVE_CXX11 /;"	d
+HAVE_DRAND48	config.h	/^#define HAVE_DRAND48 /;"	d
+HAVE_FCNTL_H	config.h	/^#define HAVE_FCNTL_H /;"	d
+HAVE_GETTIMEOFDAY	config.h	/^#define HAVE_GETTIMEOFDAY /;"	d
+HAVE_INTTYPES_H	config.h	/^#define HAVE_INTTYPES_H /;"	d
+HAVE_MEMORY_H	config.h	/^#define HAVE_MEMORY_H /;"	d
+HAVE_STDINT_H	config.h	/^#define HAVE_STDINT_H /;"	d
+HAVE_STDLIB_H	config.h	/^#define HAVE_STDLIB_H /;"	d
+HAVE_STRCHR	config.h	/^#define HAVE_STRCHR /;"	d
+HAVE_STRINGS_H	config.h	/^#define HAVE_STRINGS_H /;"	d
+HAVE_STRING_H	config.h	/^#define HAVE_STRING_H /;"	d
+HAVE_SYS_STAT_H	config.h	/^#define HAVE_SYS_STAT_H /;"	d
+HAVE_SYS_TIME_H	config.h	/^#define HAVE_SYS_TIME_H /;"	d
+HAVE_SYS_TYPES_H	config.h	/^#define HAVE_SYS_TYPES_H /;"	d
+HAVE_UNISTD_H	config.h	/^#define HAVE_UNISTD_H /;"	d
+HAVE_UNORDERED_MAP	config.h	/^#define HAVE_UNORDERED_MAP /;"	d
+HIGH_CARD_FREQ	threes.h	/^#define HIGH_CARD_FREQ /;"	d
+INITIAL_DECK	threes.h	/^#define INITIAL_DECK /;"	d
+Image	ocr/ocr.py	/^import PIL.Image as Image$/;"	i
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/usr\/local\/bin\/gmkdir -p$/;"	m
+MULTITHREAD	threes_ai_c.py	/^MULTITHREAD = True$/;"	v
+ManualAssistant	manual_assistant.py	/^class ManualAssistant:$/;"	c	inherits:
+Namespace	ocr/devices.py	/^class Namespace(object):$/;"	c	inherits:object
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OCR	android_assistant.py	/^from ocr import OCR$/;"	i
+OCR	deck_reconstruct.py	/^    from ocr import OCR$/;"	i
+OCR	dirwatch_assistant.py	/^from ocr import OCR$/;"	i
+OCR	ocr/__init__.py	/^from ocr import OCR$/;"	i
+OCR	ocr/ocr.py	/^class OCR:$/;"	c	inherits:
+PACKAGE_BUGREPORT	config.h	/^#define PACKAGE_BUGREPORT /;"	d
+PACKAGE_NAME	config.h	/^#define PACKAGE_NAME /;"	d
+PACKAGE_STRING	config.h	/^#define PACKAGE_STRING /;"	d
+PACKAGE_TARNAME	config.h	/^#define PACKAGE_TARNAME /;"	d
+PACKAGE_URL	config.h	/^#define PACKAGE_URL /;"	d
+PACKAGE_VERSION	config.h	/^#define PACKAGE_VERSION /;"	d
+PIL	ocr/ocr.py	/^import PIL.Image as Image$/;"	i
+PIPE	android/adb_shell.py	/^from subprocess import Popen, PIPE$/;"	i
+PLATDEFS_H	platdefs.h	/^#define PLATDEFS_H$/;"	d
+Popen	android/adb_shell.py	/^from subprocess import Popen, PIPE$/;"	i
+ROW_MASK	threes.h	/^#define ROW_MASK /;"	d
+SCORE_12_MERGES_WEIGHT	threes.cpp	/^static float SCORE_12_MERGES_WEIGHT = 0.0f;$/;"	v	file:
+SCORE_EMPTY_WEIGHT	threes.cpp	/^static float SCORE_EMPTY_WEIGHT = 270.0f;$/;"	v	file:
+SCORE_LOST_PENALTY	threes.cpp	/^static float SCORE_LOST_PENALTY = 200000.0f;$/;"	v	file:
+SCORE_MERGES_WEIGHT	threes.cpp	/^static float SCORE_MERGES_WEIGHT = 700.0f;$/;"	v	file:
+SCORE_MONOTONICITY_POWER	threes.cpp	/^static float SCORE_MONOTONICITY_POWER = 4.0f;$/;"	v	file:
+SCORE_MONOTONICITY_WEIGHT	threes.cpp	/^static float SCORE_MONOTONICITY_WEIGHT = 47.0f;$/;"	v	file:
+SCORE_SUM_POWER	threes.cpp	/^static float SCORE_SUM_POWER = 3.5f;$/;"	v	file:
+SCORE_SUM_WEIGHT	threes.cpp	/^static float SCORE_SUM_WEIGHT = 11.0f;$/;"	v	file:
+SIGABRT	android/adb_shell.py	/^    SIGABRT = 6$/;"	v	class:AndroidSignal
+SIGALRM	android/adb_shell.py	/^    SIGALRM = 14$/;"	v	class:AndroidSignal
+SIGBUS	android/adb_shell.py	/^    SIGBUS = 7$/;"	v	class:AndroidSignal
+SIGCHLD	android/adb_shell.py	/^    SIGCHLD = 17$/;"	v	class:AndroidSignal
+SIGCONT	android/adb_shell.py	/^    SIGCONT = 18$/;"	v	class:AndroidSignal
+SIGFPE	android/adb_shell.py	/^    SIGFPE = 8$/;"	v	class:AndroidSignal
+SIGHUP	android/adb_shell.py	/^    SIGHUP = 1$/;"	v	class:AndroidSignal
+SIGILL	android/adb_shell.py	/^    SIGILL = 4$/;"	v	class:AndroidSignal
+SIGINT	android/adb_shell.py	/^    SIGINT = 2$/;"	v	class:AndroidSignal
+SIGIO	android/adb_shell.py	/^    SIGIO = 29$/;"	v	class:AndroidSignal
+SIGKILL	android/adb_shell.py	/^    SIGKILL = 9$/;"	v	class:AndroidSignal
+SIGPIPE	android/adb_shell.py	/^    SIGPIPE = 13$/;"	v	class:AndroidSignal
+SIGPROF	android/adb_shell.py	/^    SIGPROF = 27$/;"	v	class:AndroidSignal
+SIGPWR	android/adb_shell.py	/^    SIGPWR = 30$/;"	v	class:AndroidSignal
+SIGQUIT	android/adb_shell.py	/^    SIGQUIT = 3$/;"	v	class:AndroidSignal
+SIGSEGV	android/adb_shell.py	/^    SIGSEGV = 11$/;"	v	class:AndroidSignal
+SIGSTKFLT	android/adb_shell.py	/^    SIGSTKFLT = 16$/;"	v	class:AndroidSignal
+SIGSTOP	android/adb_shell.py	/^    SIGSTOP = 19$/;"	v	class:AndroidSignal
+SIGSYS	android/adb_shell.py	/^    SIGSYS = 31$/;"	v	class:AndroidSignal
+SIGTERM	android/adb_shell.py	/^    SIGTERM = 15$/;"	v	class:AndroidSignal
+SIGTRAP	android/adb_shell.py	/^    SIGTRAP = 5$/;"	v	class:AndroidSignal
+SIGTSTP	android/adb_shell.py	/^    SIGTSTP = 20$/;"	v	class:AndroidSignal
+SIGTTIN	android/adb_shell.py	/^    SIGTTIN = 21$/;"	v	class:AndroidSignal
+SIGTTOU	android/adb_shell.py	/^    SIGTTOU = 22$/;"	v	class:AndroidSignal
+SIGURG	android/adb_shell.py	/^    SIGURG = 23$/;"	v	class:AndroidSignal
+SIGUSR1	android/adb_shell.py	/^    SIGUSR1 = 10$/;"	v	class:AndroidSignal
+SIGUSR2	android/adb_shell.py	/^    SIGUSR2 = 12$/;"	v	class:AndroidSignal
+SIGVTALRM	android/adb_shell.py	/^    SIGVTALRM = 26$/;"	v	class:AndroidSignal
+SIGWINCH	android/adb_shell.py	/^    SIGWINCH = 28$/;"	v	class:AndroidSignal
+SIGXCPU	android/adb_shell.py	/^    SIGXCPU = 24$/;"	v	class:AndroidSignal
+SIGXFSZ	android/adb_shell.py	/^    SIGXFSZ = 25$/;"	v	class:AndroidSignal
+STDC_HEADERS	config.h	/^#define STDC_HEADERS /;"	d
+ShellCommandException	android/adb_shell.py	/^class ShellCommandException(OSError):$/;"	c	inherits:OSError
+StringIO	android_assistant.py	/^from cStringIO import StringIO$/;"	i
+ThreadPool	threes_ai_c.py	/^    from multiprocessing.pool import ThreadPool$/;"	i
+_ADBPopenStdin	android/adb_shell.py	/^class _ADBPopenStdin:$/;"	c	inherits:
+_ADBPopenStdout	android/adb_shell.py	/^class _ADBPopenStdout:$/;"	c	inherits:
+__author__	android/adb_shell.py	/^__author__ = 'Robert Xiao <nneonneo@gmail.com>'$/;"	v
+__author__	android/inputemu.py	/^__author__ = 'Robert Xiao <nneonneo@gmail.com>'$/;"	v
+__author__	base_assistant.py	/^__author__ = 'Robert Xiao <nneonneo@gmail.com>'$/;"	v
+__author__	dirwatch_renamer.py	/^__author__ = 'Robert Xiao <nneonneo@gmail.com>'$/;"	v
+__author__	threes.py	/^__author__ = 'Robert Xiao <nneonneo@gmail.com>'$/;"	v
+__del__	android/adb_shell.py	/^    def __del__(self):$/;"	m	class:ADBShell	file:	access:private
+__getitem__	deck_reconstruct.py	/^    def __getitem__(self, i):$/;"	m	class:DeckReconstructor	file:	access:private
+__init__	android/adb_shell.py	/^    def __init__(self, cmd, status, msg):$/;"	m	class:ShellCommandException	access:public
+__init__	android/adb_shell.py	/^    def __init__(self, opts=None):$/;"	m	class:ADBShell	access:public
+__init__	android/adb_shell.py	/^    def __init__(self, popen, text, nonblocking):$/;"	m	class:_ADBPopenStdin	access:public
+__init__	android/adb_shell.py	/^    def __init__(self, popen, text, nonblocking):$/;"	m	class:_ADBPopenStdout	access:public
+__init__	android/adb_shell.py	/^    def __init__(self, shell, text=False, nonblocking=False):$/;"	m	class:ADBPopen	access:public
+__init__	android_assistant.py	/^    def __init__(self, shell, ident, ocr):$/;"	m	class:AndroidAssistant	access:public
+__init__	deck_reconstruct.py	/^    def __init__(self, board):$/;"	m	class:DeckReconstructor	access:public
+__init__	manual_assistant.py	/^    def __init__(self):$/;"	m	class:ManualAssistant	access:public
+__init__	ocr/devices.py	/^    def __init__(self, **kwargs):$/;"	m	class:Namespace	access:public
+__init__	ocr/ocr.py	/^    def __init__(self, cfg, dir, tag, thresh=500000):$/;"	m	class:ExemplarMatcher	access:public
+__init__	ocr/ocr.py	/^    def __init__(self, model):$/;"	m	class:OCR	access:public
+__iter__	android/adb_shell.py	/^    def __iter__(self):$/;"	m	class:_ADBPopenStdout	file:	access:private
+__next__	android/adb_shell.py	/^    def __next__(self):$/;"	m	class:_ADBPopenStdout	file:	access:private
+__repr__	deck_reconstruct.py	/^    def __repr__(self):$/;"	m	class:DeckReconstructor	file:	access:private
+__self__	deck_reconstruct.py	/^    def __self__(self):$/;"	m	class:DeckReconstructor	file:	access:private
+__str__	android/adb_shell.py	/^    def __str__(self):$/;"	m	class:ShellCommandException	file:	access:private
+_ask_board	manual_assistant.py	/^    def _ask_board(self):$/;"	m	class:ManualAssistant	access:public
+_ask_tileset	manual_assistant.py	/^    def _ask_tileset(self):$/;"	m	class:ManualAssistant	access:public
+_encode_command	android/adb_shell.py	/^    def _encode_command(cmd):$/;"	m	class:ADBShell	access:public
+_fixup_tileset	manual_assistant.py	/^    def _fixup_tileset(self, tileset, board):$/;"	m	class:ManualAssistant	access:public
+_grab_locked	android/adb_shell.py	/^    def _grab_locked(self, size=None):$/;"	m	class:_ADBPopenStdout	access:public
+_notify_exit	android/adb_shell.py	/^    def _notify_exit(self, status):$/;"	m	class:ADBPopen	access:public
+_parse_board	manual_assistant.py	/^    def _parse_board(self, bits):$/;"	m	class:ManualAssistant	access:public
+_parse_delta	manual_assistant.py	/^    def _parse_delta(self, ind, val=None, move=None):$/;"	m	class:ManualAssistant	access:public
+_popen_thread	android/adb_shell.py	/^    def _popen_thread(self, prompt_collected):$/;"	m	class:ADBShell	access:public
+_push	android/adb_shell.py	/^    def _push(self, data):$/;"	m	class:_ADBPopenStdout	access:public
+_push_stdout	android/adb_shell.py	/^    def _push_stdout(self, data):$/;"	m	class:ADBPopen	access:public
+_score_toplevel_move	threes.cpp	/^static float _score_toplevel_move(eval_state &state, board_t board, deck_t deck, tileset_t tileset, int move) {$/;"	f	file:
+_send_command	android/adb_shell.py	/^    def _send_command(self, cmd):$/;"	m	class:ADBShell	access:public
+_step_from_start	base_assistant.py	/^def _step_from_start(board, deck, newboard):$/;"	f	access:public
+_step_reconstruct	base_assistant.py	/^def _step_reconstruct(board, deck, newboard):$/;"	f	access:public
+_write	android/adb_shell.py	/^    def _write(self, data):$/;"	m	class:_ADBPopenStdin	access:public
+_write_events	android/inputemu.py	/^def _write_events(shell, events):$/;"	f	access:public
+ac_fn_c_find_uintX_t	configure	/^ac_fn_c_find_uintX_t ()$/;"	f
+ac_fn_c_try_compile	configure	/^ac_fn_c_try_compile ()$/;"	f
+ac_fn_c_try_cpp	configure	/^ac_fn_c_try_cpp ()$/;"	f
+ac_fn_cxx_check_func	configure	/^ac_fn_cxx_check_func ()$/;"	f
+ac_fn_cxx_check_header_compile	configure	/^ac_fn_cxx_check_header_compile ()$/;"	f
+ac_fn_cxx_check_header_mongrel	configure	/^ac_fn_cxx_check_header_mongrel ()$/;"	f
+ac_fn_cxx_try_compile	configure	/^ac_fn_cxx_try_compile ()$/;"	f
+ac_fn_cxx_try_cpp	configure	/^ac_fn_cxx_try_cpp ()$/;"	f
+ac_fn_cxx_try_link	configure	/^ac_fn_cxx_try_link ()$/;"	f
+ac_fn_cxx_try_run	configure	/^ac_fn_cxx_try_run ()$/;"	f
+argparse	android/inputemu.py	/^    import argparse$/;"	i
+argparse	android_assistant.py	/^    import argparse$/;"	i
+argparse	manual_assistant.py	/^    import argparse$/;"	i
+as_fn_append	config.status	/^  as_fn_append ()$/;"	f
+as_fn_append	configure	/^  as_fn_append ()$/;"	f
+as_fn_arith	config.status	/^  as_fn_arith ()$/;"	f
+as_fn_arith	configure	/^  as_fn_arith ()$/;"	f
+as_fn_error	config.status	/^as_fn_error ()$/;"	f
+as_fn_error	configure	/^as_fn_error ()$/;"	f
+as_fn_executable_p	config.status	/^as_fn_executable_p ()$/;"	f
+as_fn_executable_p	configure	/^as_fn_executable_p ()$/;"	f
+as_fn_exit	config.status	/^as_fn_exit ()$/;"	f
+as_fn_exit	configure	/^as_fn_exit ()$/;"	f
+as_fn_failure	configure	/^as_fn_failure () { as_fn_return 1; }$/;"	f
+as_fn_mkdir_p	config.status	/^as_fn_mkdir_p ()$/;"	f
+as_fn_mkdir_p	configure	/^as_fn_mkdir_p ()$/;"	f
+as_fn_ret_failure	configure	/^as_fn_ret_failure () { return 1; }$/;"	f
+as_fn_ret_success	configure	/^as_fn_ret_success () { return 0; }$/;"	f
+as_fn_set_status	config.status	/^as_fn_set_status ()$/;"	f
+as_fn_set_status	configure	/^as_fn_set_status ()$/;"	f
+as_fn_success	configure	/^as_fn_success () { as_fn_return 0; }$/;"	f
+as_fn_unset	config.status	/^as_fn_unset ()$/;"	f
+as_fn_unset	configure	/^as_fn_unset ()$/;"	f
+ask_for_move	threes.cpp	/^int ask_for_move(board_t board, deck_t deck, tileset_t tileset) {$/;"	f
+ask_for_move	threes.h	/^DLL_PUBLIC int ask_for_move(board_t board, deck_t deck, tileset_t tileset);$/;"	p
+bfn	dirwatch_renamer.py	/^            bfn = os.path.join(d2, '.copy_tmp.' + os.path.basename(fn))$/;"	v
+board_t	threes.h	/^typedef uint64_t board_t;$/;"	t
+cachehits	threes.cpp	/^    int cachehits;$/;"	m	struct:eval_state	file:	access:public
+classify	ocr/ocr.py	/^    def classify(self, imc):$/;"	m	class:ExemplarMatcher	access:public
+close	android/adb_shell.py	/^    def close(self):$/;"	m	class:_ADBPopenStdin	access:public
+close	android/adb_shell.py	/^    def close(self):$/;"	m	class:_ADBPopenStdout	access:public
+closed	android/adb_shell.py	/^    def closed(self):$/;"	m	class:_ADBPopenStdin	access:public
+closed	android/adb_shell.py	/^    def closed(self):$/;"	m	class:_ADBPopenStdout	access:public
+col_down_table	threes.cpp	/^static board_t col_down_table[65536];$/;"	v	file:
+col_up_table	threes.cpp	/^static board_t col_up_table[65536];$/;"	v	file:
+communicate	android/adb_shell.py	/^    def communicate(self, input=None):$/;"	m	class:ADBPopen	access:public
+count	android_assistant.py	/^    from itertools import count$/;"	i
+count	manual_assistant.py	/^    from itertools import count$/;"	i
+count_distinct_tiles	threes.cpp	/^static inline int count_distinct_tiles(board_t board) {$/;"	f	file:
+ctypes	threes_ai_c.py	/^import ctypes$/;"	i
+ctz	platdefs.h	/^static inline unsigned long ctz(unsigned long value) {$/;"	f
+curdepth	threes.cpp	/^    int curdepth;$/;"	m	struct:eval_state	file:	access:public
+deck	deck_reconstruct.py	/^    deck = None$/;"	v
+deck_t	threes.h	/^typedef uint32_t deck_t;$/;"	t
+depth_limit	threes.cpp	/^    int depth_limit;$/;"	m	struct:eval_state	file:	access:public
+dfn	dirwatch_renamer.py	/^        dfn = os.path.join(d2, os.path.basename(fn))$/;"	v
+dllfn	threes_ai_c.py	/^    dllfn = 'bin\/threes.' + suffix$/;"	v
+do_fold	threes.py	/^def do_fold(line, pos):$/;"	f	access:public
+do_move	android_assistant.py	/^from threes import do_move$/;"	i
+do_move	manual_assistant.py	/^from threes import do_move, get_lines$/;"	i
+do_move	threes.py	/^def do_move(m, move):$/;"	f	access:public
+draw_deck	threes.cpp	/^static int draw_deck(deck_t *deck) {$/;"	f	file:
+errno	android/adb_shell.py	/^import errno$/;"	i
+eval_state	threes.cpp	/^    eval_state() : maxdepth(0), curdepth(0), cachehits(0), moves_evaled(0), depth_limit(0) {$/;"	f	struct:eval_state	access:public
+eval_state	threes.cpp	/^struct eval_state {$/;"	s	file:
+eval_state::cachehits	threes.cpp	/^    int cachehits;$/;"	m	struct:eval_state	file:	access:public
+eval_state::curdepth	threes.cpp	/^    int curdepth;$/;"	m	struct:eval_state	file:	access:public
+eval_state::depth_limit	threes.cpp	/^    int depth_limit;$/;"	m	struct:eval_state	file:	access:public
+eval_state::eval_state	threes.cpp	/^    eval_state() : maxdepth(0), curdepth(0), cachehits(0), moves_evaled(0), depth_limit(0) {$/;"	f	struct:eval_state	access:public
+eval_state::maxdepth	threes.cpp	/^    int maxdepth;$/;"	m	struct:eval_state	file:	access:public
+eval_state::moves_evaled	threes.cpp	/^    unsigned long moves_evaled;$/;"	m	struct:eval_state	file:	access:public
+eval_state::trans_table	threes.cpp	/^    trans_table_t trans_table; \/\/ transposition table, to cache previously-seen moves$/;"	m	struct:eval_state	file:	access:public
+execute	android/adb_shell.py	/^    def execute(self, cmd, text=False):$/;"	m	class:ADBShell	access:public
+execute_move	threes.cpp	/^static inline board_t execute_move(int move, board_t board, int *changed) {$/;"	f	file:
+execute_move_0	threes.cpp	/^static inline board_t execute_move_0(board_t board, int *changed) {$/;"	f	file:
+execute_move_1	threes.cpp	/^static inline board_t execute_move_1(board_t board, int *changed) {$/;"	f	file:
+execute_move_2	threes.cpp	/^static inline board_t execute_move_2(board_t board, int *changed) {$/;"	f	file:
+execute_move_3	threes.cpp	/^static inline board_t execute_move_3(board_t board, int *changed) {$/;"	f	file:
+exemplar_dir	ocr/ocr.py	/^    def exemplar_dir(self):$/;"	m	class:ExemplarMatcher	access:public
+extract_next	ocr/ocr.py	/^def extract_next(cfg, im):$/;"	f	access:public
+extract_tile	ocr/ocr.py	/^def extract_tile(cfg, im, r, c):$/;"	f	access:public
+fcntl	android/adb_shell.py	/^import fcntl$/;"	i
+find_best_move	base_assistant.py	/^from threes_ai_c import find_best_move, set_heurweights$/;"	i
+find_best_move	threes.cpp	/^int find_best_move(board_t board, deck_t deck, tileset_t tileset) {$/;"	f
+find_best_move	threes.h	/^DLL_PUBLIC int find_best_move(board_t board, deck_t deck, tileset_t tileset);$/;"	p
+find_best_move	threes_ai_c.py	/^    def find_best_move(m, deck, tileset):$/;"	f	access:public
+find_fold	threes.py	/^def find_fold(line):$/;"	f	access:public
+flush	android/adb_shell.py	/^    def flush(self):$/;"	m	class:_ADBPopenStdin	access:public
+flush	android/adb_shell.py	/^    def flush(self):$/;"	m	class:_ADBPopenStdout	access:public
+fmt_sshot	android_assistant.py	/^fmt_sshot = r'S_%06d.png'$/;"	v
+game	base_assistant.py	/^    game = play_game()$/;"	v
+gen_board	base_assistant.py	/^    def gen_board():$/;"	f	access:public
+gen_board	dirwatch_assistant.py	/^def gen_board(ocr, d, startpoint=None):$/;"	f	access:public
+gen_board	manual_assistant.py	/^    def gen_board(self):$/;"	m	class:ManualAssistant	access:public
+gen_board_disk	android_assistant.py	/^    def gen_board_disk(self, d, resume=False):$/;"	m	class:AndroidAssistant	access:public
+gen_board_mem	android_assistant.py	/^    def gen_board_mem(self):$/;"	m	class:AndroidAssistant	access:public
+get_build_prop	android/inputemu.py	/^def get_build_prop(shell):$/;"	f	access:public
+get_c_state	threes_ai_c.py	/^def get_c_state(m, deck, tileset):$/;"	f	access:public
+get_exemplars	ocr/ocr.py	/^    def get_exemplars(self):$/;"	m	class:ExemplarMatcher	access:public
+get_ident	android/inputemu.py	/^def get_ident(shell):$/;"	f	access:public
+get_ident	android_assistant.py	/^from android.inputemu import get_model, get_ident, playback_gesture$/;"	i
+get_lines	manual_assistant.py	/^from threes import do_move, get_lines$/;"	i
+get_lines	threes.py	/^def get_lines(m, dir):$/;"	f	access:public
+get_max_rank	threes.cpp	/^static inline int get_max_rank(board_t board) {$/;"	f	file:
+get_model	android/inputemu.py	/^def get_model(shell):$/;"	f	access:public
+get_model	android_assistant.py	/^from android.inputemu import get_model, get_ident, playback_gesture$/;"	i
+get_move_func_t	threes.h	/^typedef int (*get_move_func_t)(board_t, deck_t, tileset_t);$/;"	t
+get_quadrant	threes.cpp	/^static row_t get_quadrant(board_t board, int quadrant) {$/;"	f	file:
+get_row_max_rank	threes.cpp	/^static inline int get_row_max_rank(row_t row) {$/;"	f	file:
+getmove	base_assistant.py	/^def getmove(m1, m2):$/;"	f	access:public
+gettimeofday	platdefs.h	/^int gettimeofday(struct timeval *tv, struct timezone *tz)$/;"	f
+glob	ocr/ocr.py	/^import glob$/;"	i
+guess_classify	ocr/ocr.py	/^    def guess_classify(self, imc):$/;"	m	class:ExemplarMatcher	access:public
+heur_score_table	threes.cpp	/^static float heur_score_table[65536];$/;"	v	file:
+imglist	deck_reconstruct.py	/^    imglist = sorted([fn for fn in os.listdir(dirname) if fn >= startfn])$/;"	v
+init_tables	threes.cpp	/^void init_tables() {$/;"	f
+init_tables	threes.h	/^DLL_PUBLIC void init_tables(void);$/;"	p
+initial_board	threes.cpp	/^static board_t initial_board(deck_t *deck) {$/;"	f	file:
+initial_deck	base_assistant.py	/^def initial_deck():$/;"	f	access:public
+insert_tile	threes.cpp	/^static inline board_t insert_tile(int move, board_t board, int pos, int tile) {$/;"	f	file:
+kill	android/adb_shell.py	/^    def kill(self):$/;"	m	class:ADBPopen	access:public
+load	ocr/ocr.py	/^    def load(self):$/;"	m	class:ExemplarMatcher	access:public
+main	android/inputemu.py	/^def main(argv):$/;"	f	access:public
+main	android_assistant.py	/^def main(argv):$/;"	f	access:public
+main	manual_assistant.py	/^def main(argv):$/;"	f	access:public
+main	threes.cpp	/^int main() {$/;"	f
+make_deck	threes.py	/^def make_deck():$/;"	f	access:public
+make_move	android_assistant.py	/^    def make_move(self, move):$/;"	m	class:AndroidAssistant	access:public
+make_move	base_assistant.py	/^    def make_move(mv):$/;"	f	access:public
+make_move	dirwatch_assistant.py	/^def make_move(move):$/;"	f	access:public
+make_move	manual_assistant.py	/^    def make_move(self, move):$/;"	m	class:ManualAssistant	access:public
+max	threes.cpp	/^#undef max$/;"	d	file:
+maxdepth	threes.cpp	/^    int maxdepth;$/;"	m	struct:eval_state	file:	access:public
+min	threes.cpp	/^#undef min$/;"	d	file:
+mode	android/adb_shell.py	/^    def mode(self):$/;"	m	class:_ADBPopenStdin	access:public
+mode	android/adb_shell.py	/^    def mode(self):$/;"	m	class:_ADBPopenStdout	access:public
+model	ocr/ocr.py	/^    model = sys.argv[1]$/;"	v	class:OCR
+move	base_assistant.py	/^    move = None$/;"	v
+movenames	android_assistant.py	/^from base_assistant import run_assistant, movenames$/;"	i
+movenames	base_assistant.py	/^movenames = ['up', 'down', 'left', 'right']$/;"	v
+movenames	manual_assistant.py	/^from base_assistant import run_assistant, movenames$/;"	i
+movenum	base_assistant.py	/^    movenum = dict((j,i) for i,j in enumerate(movenames))$/;"	v
+moves_evaled	threes.cpp	/^    unsigned long moves_evaled;$/;"	m	struct:eval_state	file:	access:public
+next	android/adb_shell.py	/^    def next(self):$/;"	m	class:_ADBPopenStdout	access:public
+np	manual_assistant.py	/^import numpy as np$/;"	i
+np	ocr/ocr.py	/^import numpy as np$/;"	i
+np	threes.py	/^import numpy as np$/;"	i
+np	threes_ai_c.py	/^import numpy as np$/;"	i
+ocr	deck_reconstruct.py	/^    ocr = OCR("LGE Nexus 5")$/;"	v
+ocr	ocr/ocr.py	/^    def ocr(self, fn):$/;"	m	class:OCR	access:public
+ocr	ocr/ocr.py	/^    ocr = OCR(model)$/;"	v	class:OCR
+os	android/adb_shell.py	/^import os$/;"	i
+os	android/inputemu.py	/^import os$/;"	i
+os	android_assistant.py	/^import os$/;"	i
+os	deck_reconstruct.py	/^    import sys, os$/;"	i
+os	dirwatch_assistant.py	/^import os$/;"	i
+os	dirwatch_renamer.py	/^import os$/;"	i
+os	manual_assistant.py	/^import os$/;"	i
+os	ocr/ocr.py	/^import os$/;"	i
+os	threes_ai_c.py	/^import os$/;"	i
+pack_col	threes.h	/^static inline row_t pack_col(board_t col) {$/;"	f
+parse_args	android/inputemu.py	/^def parse_args(argv):$/;"	f	access:public
+parse_args	android_assistant.py	/^def parse_args(argv):$/;"	f	access:public
+parse_args	manual_assistant.py	/^def parse_args(argv):$/;"	f	access:public
+parse_getevent	android/inputemu.py	/^def parse_getevent(line):$/;"	f	access:public
+pid	android/adb_shell.py	/^    def pid(self):$/;"	m	class:ADBPopen	access:public
+play_game	threes.cpp	/^void play_game(get_move_func_t get_move) {$/;"	f
+play_game	threes.h	/^DLL_PUBLIC void play_game(get_move_func_t get_move);$/;"	p
+play_game	threes.py	/^def play_game():$/;"	f	access:public
+play_game	threes_ai_c.py	/^    from threes import play_game, to_val, to_score$/;"	i
+play_game_interactive	threes.py	/^def play_game_interactive():$/;"	f	access:public
+play_with_search	threes_ai_c.py	/^def play_with_search(verbose=True):$/;"	f	access:public
+playback_gesture	android/inputemu.py	/^def playback_gesture(shell, ident, gesture):$/;"	f	access:public
+playback_gesture	android_assistant.py	/^from android.inputemu import get_model, get_ident, playback_gesture$/;"	i
+poll	android/adb_shell.py	/^    def poll(self):$/;"	m	class:ADBPopen	access:public
+pool	threes_ai_c.py	/^    pool = ThreadPool(4)$/;"	v
+popen	android/adb_shell.py	/^    def popen(self, cmd, text=False, nonblocking=False):$/;"	m	class:ADBShell	access:public
+print_board	threes.h	/^static inline void print_board(board_t board) {$/;"	f
+product	deck_reconstruct.py	/^from itertools import product$/;"	i
+prototypes	configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	f
+random	threes.py	/^    import random$/;"	i
+random	threes_ai_c.py	/^    import random$/;"	i
+random_tile	threes.cpp	/^static int random_tile(tileset_t choices) {$/;"	f	file:
+re	android/adb_shell.py	/^import re$/;"	i
+re	android/inputemu.py	/^import re$/;"	i
+re	android_assistant.py	/^import re$/;"	i
+re	manual_assistant.py	/^import re$/;"	i
+re	ocr/ocr.py	/^import re$/;"	i
+re_sshot	android_assistant.py	/^re_sshot = r'^S_(\\d{6}).png$'$/;"	v
+read	android/adb_shell.py	/^    def read(self, size=None):$/;"	m	class:_ADBPopenStdout	access:public
+read_nonblock	android/adb_shell.py	/^def read_nonblock(f, n=None):$/;"	f	access:public
+read_timed	android/adb_shell.py	/^def read_timed(f, n=None, timeout=None):$/;"	f	access:public
+readline	android/adb_shell.py	/^    def readline(self, size=None):$/;"	m	class:_ADBPopenStdout	access:public
+readlines	android/adb_shell.py	/^    def readlines(self, sizehint=None):$/;"	m	class:_ADBPopenStdout	access:public
+readlines_timed	android/inputemu.py	/^def readlines_timed(f, tottime):$/;"	f	access:public
+record_gestures	android/inputemu.py	/^def record_gestures(shell, ident, gestlist):$/;"	f	access:public
+restart	android_assistant.py	/^    def restart(self):$/;"	m	class:AndroidAssistant	access:public
+returncode	android/adb_shell.py	/^    def returncode(self):$/;"	m	class:ADBPopen	access:public
+reverse_row	threes.h	/^static inline row_t reverse_row(row_t row) {$/;"	f
+row_left_table	threes.cpp	/^static row_t row_left_table[65536];$/;"	v	file:
+row_max_table	threes.cpp	/^static char row_max_table[65536];$/;"	v	file:
+row_right_table	threes.cpp	/^static row_t row_right_table[65536];$/;"	v	file:
+row_t	threes.h	/^typedef uint16_t row_t;$/;"	t
+run_assistant	android_assistant.py	/^from base_assistant import run_assistant, movenames$/;"	i
+run_assistant	base_assistant.py	/^def run_assistant(gen_board, make_move_func, from_start=True):$/;"	f	access:public
+run_assistant	dirwatch_assistant.py	/^from base_assistant import run_assistant$/;"	i
+run_assistant	manual_assistant.py	/^from base_assistant import run_assistant, movenames$/;"	i
+rungame	dirwatch_assistant.py	/^def rungame(args):$/;"	f	access:public
+score_board	threes.cpp	/^static float score_board(board_t board) {$/;"	f	file:
+score_board	threes.cpp	/^static float score_board(board_t board);$/;"	p	file:
+score_helper	threes.cpp	/^static float score_helper(board_t board, const float* table) {$/;"	f	file:
+score_heur_board	threes.cpp	/^static float score_heur_board(board_t board) {$/;"	f	file:
+score_heur_board	threes.cpp	/^static float score_heur_board(board_t board);$/;"	p	file:
+score_move_node	threes.cpp	/^static float score_move_node(eval_state &state, board_t board, deck_t deck, float cprob) {$/;"	f	file:
+score_move_node	threes.cpp	/^static float score_move_node(eval_state &state, board_t board, deck_t deck, float cprob);$/;"	p	file:
+score_table	threes.cpp	/^static float score_table[65536];$/;"	v	file:
+score_tilechoose_node	threes.cpp	/^static float score_tilechoose_node(eval_state &state, board_t board, deck_t deck, float cprob, int move, int changed) {$/;"	f	file:
+score_tilechoose_node	threes.cpp	/^static float score_tilechoose_node(eval_state &state, board_t board, deck_t deck, float cprob, int move, int changed);$/;"	p	file:
+score_tileinsert_node	threes.cpp	/^static float score_tileinsert_node(eval_state &state, board_t board, deck_t deck, float cprob, int move, int changed, int tile) {$/;"	f	file:
+score_tileinsert_node	threes.cpp	/^static float score_tileinsert_node(eval_state &state, board_t board, deck_t deck, float cprob, int move, int changed, int tile);$/;"	p	file:
+score_toplevel_move	threes.cpp	/^float score_toplevel_move(board_t board, deck_t deck, tileset_t tileset, int move) {$/;"	f
+score_toplevel_move	threes.h	/^DLL_PUBLIC float score_toplevel_move(board_t board, deck_t deck, tileset_t tileset, int move);$/;"	p
+score_toplevel_move	threes_ai_c.py	/^    def score_toplevel_move(args):$/;"	f	access:public
+select	android/adb_shell.py	/^import select$/;"	i
+send_signal	android/adb_shell.py	/^    def send_signal(self, signo):$/;"	m	class:ADBPopen	access:public
+set_heurweights	base_assistant.py	/^from threes_ai_c import find_best_move, set_heurweights$/;"	i
+set_heurweights	threes.cpp	/^void set_heurweights(float *f, int flen) {$/;"	f
+set_heurweights	threes.h	/^DLL_PUBLIC void set_heurweights(float *f, int flen);$/;"	p
+set_heurweights	threes_ai_c.py	/^def set_heurweights(*args):$/;"	f	access:public
+shellquote	android/adb_shell.py	/^    from pipes import quote as shellquote$/;"	i
+shellquote	android/adb_shell.py	/^    from shlex import quote as shellquote$/;"	i
+shutil	dirwatch_renamer.py	/^import shutil$/;"	i
+signal	android/adb_shell.py	/^import signal$/;"	i
+struct	android/inputemu.py	/^import struct$/;"	i
+sys	android/adb_shell.py	/^    import sys$/;"	i
+sys	android/adb_shell.py	/^import sys$/;"	i
+sys	android/inputemu.py	/^    import sys$/;"	i
+sys	android_assistant.py	/^    import sys$/;"	i
+sys	deck_reconstruct.py	/^    import sys, os$/;"	i
+sys	dirwatch_assistant.py	/^    import sys$/;"	i
+sys	dirwatch_renamer.py	/^    import sys$/;"	i
+sys	manual_assistant.py	/^    import sys$/;"	i
+sys	ocr/ocr.py	/^    import sys$/;"	i
+sys	threes_ai_c.py	/^import sys$/;"	i
+terminate	android/adb_shell.py	/^    def terminate(self):$/;"	m	class:ADBPopen	access:public
+test_false	android/adb_shell.py	/^def test_false(shell):$/;"	f	access:public
+test_getevent	android/adb_shell.py	/^def test_getevent(shell):$/;"	f	access:public
+test_popen	android/adb_shell.py	/^def test_popen(shell):$/;"	f	access:public
+test_true	android/adb_shell.py	/^def test_true(shell):$/;"	f	access:public
+threading	android/adb_shell.py	/^import threading$/;"	i
+threes	threes_ai_c.py	/^    threes = ctypes.CDLL(dllfn)$/;"	v
+tileset_t	threes.h	/^typedef uint16_t tileset_t;$/;"	t
+time	android/adb_shell.py	/^import time$/;"	i
+time	android/inputemu.py	/^import time$/;"	i
+time	android_assistant.py	/^import time$/;"	i
+time	base_assistant.py	/^import time$/;"	i
+time	dirwatch_assistant.py	/^import time$/;"	i
+time	dirwatch_renamer.py	/^import time$/;"	i
+time	threes_ai_c.py	/^    import time$/;"	i
+to_imgkey	ocr/ocr.py	/^def to_imgkey(imc):$/;"	f	access:public
+to_ind	manual_assistant.py	/^def to_ind(val):$/;"	f	access:public
+to_ind	ocr/ocr.py	/^def to_ind(val):$/;"	f	access:public
+to_score	threes.py	/^def to_score(x):$/;"	f	access:public
+to_score	threes_ai_c.py	/^    from threes import play_game, to_val, to_score$/;"	i
+to_val	threes.py	/^def to_val(x):$/;"	f	access:public
+to_val	threes_ai_c.py	/^    from threes import play_game, to_val, to_score$/;"	i
+trans_table	threes.cpp	/^    trans_table_t trans_table; \/\/ transposition table, to cache previously-seen moves$/;"	m	struct:eval_state	file:	access:public
+trans_table_t	threes.cpp	/^    typedef std::map<board_t, float> trans_table_t;$/;"	t	file:
+trans_table_t	threes.cpp	/^    typedef std::tr1::unordered_map<board_t, float> trans_table_t;$/;"	t	file:
+trans_table_t	threes.cpp	/^    typedef std::unordered_map<board_t, float> trans_table_t;$/;"	t	file:
+transpose	threes.cpp	/^static inline board_t transpose(board_t x)$/;"	f	file:
+unif_random	platdefs.h	/^static inline unsigned unif_random(unsigned n) {$/;"	f
+unpack_col	threes.h	/^static inline board_t unpack_col(row_t row) {$/;"	f
+update	deck_reconstruct.py	/^    def update(self, tile):$/;"	m	class:DeckReconstructor	access:public
+wait	android/adb_shell.py	/^    def wait(self):$/;"	m	class:ADBPopen	access:public
+warn	android/adb_shell.py	/^def warn(x):$/;"	f	access:public
+watchdir	dirwatch_assistant.py	/^def watchdir(d, sleeptime=0.1):$/;"	f	access:public
+watchdir	dirwatch_renamer.py	/^def watchdir(d, sleeptime=0.1):$/;"	f	access:public
+write	android/adb_shell.py	/^    def write(self, data):$/;"	m	class:_ADBPopenStdin	access:public
+writelines	android/adb_shell.py	/^    def writelines(self, seq):$/;"	m	class:_ADBPopenStdin	access:public
+xreadlines	android/adb_shell.py	/^    def xreadlines(self):$/;"	m	class:_ADBPopenStdout	access:public
