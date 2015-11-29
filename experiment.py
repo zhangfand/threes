@@ -14,6 +14,6 @@ with open('result.cvs', 'w') as file:
             './bin/threes', stderr=subprocess.PIPE, stdout=DEVNULL)
         for line in p.stderr.readlines():
             file.write(line)
-        print("Test #" + i + " Finished.")
+        print("Test #" + str(i) + " Finished.")
 
 retval = p.wait()
