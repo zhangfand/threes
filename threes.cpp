@@ -63,13 +63,13 @@ static float score_table[65536];
 
 // Heuristic scoring settings
 static float SCORE_LOST_PENALTY = 200000.0f;
-static float SCORE_MONOTONICITY_POWER = 0f;
-static float SCORE_MONOTONICITY_WEIGHT = 0f;
+static float SCORE_MONOTONICITY_POWER = 0.0f;
+static float SCORE_MONOTONICITY_WEIGHT = 0.0f;
 static float SCORE_SUM_POWER = 3.5f;
 static float SCORE_SUM_WEIGHT = 11.0f;
-static float SCORE_MERGES_WEIGHT = 0f;
-static float SCORE_12_MERGES_WEIGHT = 0f;
-static float SCORE_EMPTY_WEIGHT = 0f;
+static float SCORE_MERGES_WEIGHT = 0.0f;
+static float SCORE_12_MERGES_WEIGHT = 0.0f;
+static float SCORE_EMPTY_WEIGHT = 0.0f;
 
 void set_heurweights(float *f, int flen) {
     if(flen != 7) {
