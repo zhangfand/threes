@@ -63,10 +63,10 @@ static float score_table[65536];
 // Heuristic scoring settings
 static float SCORE_LOST_PENALTY = 200000.0f;
 static float SCORE_MONOTONICITY_POWER = 4.0f;
-static float SCORE_MONOTONICITY_WEIGHT = 47.0f;
+static float SCORE_MONOTONICITY_WEIGHT = 0.0f;
 static float SCORE_SUM_POWER = 3.5f;
-static float SCORE_SUM_WEIGHT = 11.0f;
-static float SCORE_MERGES_WEIGHT = 700.0f;
+static float SCORE_SUM_WEIGHT = 0.0f;
+static float SCORE_MERGES_WEIGHT = 0.0f;
 static float SCORE_12_MERGES_WEIGHT = 0.0f;
 static float SCORE_EMPTY_WEIGHT = 270.0f;
 
