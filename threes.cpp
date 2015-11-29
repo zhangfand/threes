@@ -63,13 +63,13 @@ static float score_table[65536];
 
 // Heuristic scoring settings
 static float SCORE_LOST_PENALTY = 200000.0f;
-static float SCORE_MONOTONICITY_POWER = 0f;
-static float SCORE_MONOTONICITY_WEIGHT = 0f;
+static float SCORE_MONOTONICITY_POWER = 0.0f;
+static float SCORE_MONOTONICITY_WEIGHT = 0.0f;
 static float SCORE_SUM_POWER = 3.5f;
 static float SCORE_SUM_WEIGHT = 11.0f;
-static float SCORE_MERGES_WEIGHT = 0f;
-static float SCORE_12_MERGES_WEIGHT = 0f;
-static float SCORE_EMPTY_WEIGHT = 0f;
+static float SCORE_MERGES_WEIGHT = 0.0f;
+static float SCORE_12_MERGES_WEIGHT = 0.0f;
+static float SCORE_EMPTY_WEIGHT = 0.0f;
 
 void set_heurweights(float *f, int flen) {
     if(flen != 7) {
@@ -526,8 +526,8 @@ float score_toplevel_move(board_t board, deck_t deck, tileset_t tileset, int mov
     double elapsed;
     eval_state state;
 
-    state.depth_limit = std::max(3, count_distinct_tiles(board) - 2);
-
+    //state.depth_limit = std::max(3, count_distinct_tiles(board) - 2);
+    state.depth_limit =4;
     /* Opposite-corners penalty */
     int corner_disparity = 0;
     int maxrank = get_max_rank(board);
