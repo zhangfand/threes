@@ -6,6 +6,7 @@
 #include <string.h>
 #include "threes.h"
 
+// dumb
 #include "config.h"
 #if defined(HAVE_UNORDERED_MAP)
     #include <unordered_map>
