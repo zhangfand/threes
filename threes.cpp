@@ -66,11 +66,11 @@ static float score_table[65536];
 static float SCORE_LOST_PENALTY = 200000.0f;
 static float SCORE_MONOTONICITY_POWER = 4.0f;
 static float SCORE_MONOTONICITY_WEIGHT = 47.0f;
-static float SCORE_SUM_POWER = 3.5f;
-static float SCORE_SUM_WEIGHT = 11.0f;
-static float SCORE_MERGES_WEIGHT = 700.0f;
+static float SCORE_SUM_POWER = 0.0f;
+static float SCORE_SUM_WEIGHT = 0.0f;
+static float SCORE_MERGES_WEIGHT = 0.0f;
 static float SCORE_12_MERGES_WEIGHT = 0.0f;
-static float SCORE_EMPTY_WEIGHT = 270.0f;
+static float SCORE_EMPTY_WEIGHT = 0.0f;
 
 void set_heurweights(float *f, int flen) {
     if(flen != 7) {
@@ -156,11 +156,12 @@ void init_tables() {
             + SCORE_MERGES_WEIGHT * merges
             + SCORE_12_MERGES_WEIGHT * onetwo_merges
             - SCORE_MONOTONICITY_WEIGHT * std::min(monotonicity_left, monotonicity_right)
+            - SCORE_MONOTONICITY_WEIGHT *(monotonicity_left+ monotonicity_right)
             - SCORE_SUM_WEIGHT * sum;
 
         // execute a move to the left
         int i;
-
+ 
         for(i=0; i<3; i++) {
             if(line[i] == 0) {
                 line[i] = line[i+1];
