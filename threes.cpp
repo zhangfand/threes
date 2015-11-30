@@ -554,6 +554,14 @@ float score_toplevel_move(board_t board, deck_t deck, tileset_t tileset, int mov
     return res;
 }
 
+static char move_map(int move) {
+    switch (move) {
+        case 0: return 'U';
+        case 1: return 'D';
+        case 2: return 'L';
+        case 3: return 'R';
+    }
+}
 /* Find the best move for a given board, deck and upcoming tile.
  * 
  * Note: the deck must represent the deck BEFORE the given tile was drawn.
@@ -579,7 +587,7 @@ int find_best_move(board_t board, deck_t deck, tileset_t tileset) {
             bestmove = move;
         }
     }
-
+    printf("Take move %c.\n", move_map(bestmove));
     return bestmove;
 }
 
