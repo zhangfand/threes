@@ -1,13 +1,15 @@
 import subprocess
+import sys
+
 try:
     from subprocess import DEVNULL
 except ImportError:
     import os
     DEVNULL = open(os.devnull, 'wb')
 
-EXPERIMENT_TIMES = 100
+EXPERIMENT_TIMES = int(sys.argv[1]) if len(sys.argv) > 1 else 1
 
-with open('result.cvs', 'w') as file:
+with open('result.csv', 'w') as file:
     file.write("move, score, max rank\n")
     for i in range(EXPERIMENT_TIMES):
         p = subprocess.Popen(
