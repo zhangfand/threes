@@ -156,7 +156,6 @@ void init_tables() {
             + SCORE_MERGES_WEIGHT * merges
             + SCORE_12_MERGES_WEIGHT * onetwo_merges
             - SCORE_MONOTONICITY_WEIGHT * std::min(monotonicity_left, monotonicity_right)
-            - SCORE_MONOTONICITY_WEIGHT *(monotonicity_left+ monotonicity_right)
             - SCORE_SUM_WEIGHT * sum;
 
         // execute a move to the left
