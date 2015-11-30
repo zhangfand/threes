@@ -69,6 +69,7 @@ static float SCORE_SUM_WEIGHT = 11.0f;
 static float SCORE_MERGES_WEIGHT = 700.0f;
 static float SCORE_12_MERGES_WEIGHT = 0.0f;
 static float SCORE_EMPTY_WEIGHT = 270.0f;
+static float SCORE_VALID_ACTION_WEIGHT = 1.0f;
 
 void set_heurweights(float *f, int flen) {
     if(flen != 7) {
@@ -181,6 +182,7 @@ void init_tables() {
         // no merge happens
         if(i == 3) continue;
 
+
         // move the remaining tils to the left.
         for(int j=i+1; j<3; j++)
             line[j] = line[j+1];
@@ -198,6 +200,12 @@ void init_tables() {
         row_right_table[rev_row] =            rev_row  ^            rev_result;
         col_up_table   [    row] = unpack_col(    row) ^ unpack_col(    result);
         col_down_table [rev_row] = unpack_col(rev_row) ^ unpack_col(rev_result);
+
+        // valid action numbers
+        // left is possible for the row
+        heur_score_table[row] += SCORE_VALID_ACTION_WEIGHT * 1;
+        // right is possible for the row
+        heur_score_table[rev_row] += SCORE_VALID_ACTION_WEIGHT * 1;
     }
 }
 
@@ -738,6 +746,9 @@ void play_game(get_move_func_t get_move) {
     }
 
     print_board(board);
+    // summary
+    // hack: use stderr to output the result
+    fprintf(stderr, "%d , %.0f , %d\n", moveno, score_board(board), get_max_rank(board) );
     printf("\nGame over. Your score is %.0f. The highest rank you achieved was %d.\n", score_board(board), get_max_rank(board));
 }
 
