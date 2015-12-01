@@ -527,23 +527,23 @@ float score_toplevel_move(board_t board, deck_t deck, tileset_t tileset, int mov
     double elapsed;
     eval_state state;
 
-    state.depth_limit = 4;
+//    state.depth_limit = 4;
     // TODO This part of code extends search depth
-//    state.depth_limit = std::max(3, count_distinct_tiles(board) - 2);
-//
-//    /* Opposite-corners penalty */
-//    int corner_disparity = 0;
-//    int maxrank = get_max_rank(board);
-//    for(int q=0; q<4; q++) {
-//        if(get_row_max_rank(get_quadrant(board, q)) == maxrank) {
-//            /* Get rank in the opposite corner */
-//            corner_disparity = maxrank - get_row_max_rank(get_quadrant(board, 3-q));
-//            break;
-//        }
-//    }
-//    if(corner_disparity <= 4 && maxrank >= 9) {
-//        state.depth_limit += 2;
-//    }
+    state.depth_limit = std::max(3, count_distinct_tiles(board) - 2);
+
+    /* Opposite-corners penalty */
+    int corner_disparity = 0;
+    int maxrank = get_max_rank(board);
+    for(int q=0; q<4; q++) {
+        if(get_row_max_rank(get_quadrant(board, q)) == maxrank) {
+            /* Get rank in the opposite corner */
+            corner_disparity = maxrank - get_row_max_rank(get_quadrant(board, 3-q));
+            break;
+        }
+    }
+    if(corner_disparity <= 4 && maxrank >= 9) {
+        state.depth_limit += 2;
+    }
 
     // TODO we don't need to calculate the computation time.
     gettimeofday(&start, NULL);
