@@ -64,6 +64,7 @@ static float score_table[65536];
 static float SCORE_LOST_PENALTY = 200000.0f;
 static float SCORE_MONOTONICITY_POWER = 4.0f;
 static float SCORE_MONOTONICITY_WEIGHT = 47.0f;
+static float SCORE_SMOOTHNESS_WEIGHT = 5.0f;
 static float SCORE_SUM_POWER = 3.5f;
 static float SCORE_SUM_WEIGHT = 11.0f;
 static float SCORE_MERGES_WEIGHT = 700.0f;
@@ -148,12 +149,19 @@ void init_tables() {
                 monotonicity_right += pow(line[i], SCORE_MONOTONICITY_POWER) - pow(line[i-1], SCORE_MONOTONICITY_POWER);
             }
         }
-
+        float smoothness = 0;
+        for (int i = 1; i < 4; ++i) {
+            smoothness += std:abs(line[i-1]-line[i])
+        }
+        
+        
+        
         heur_score_table[row] = SCORE_LOST_PENALTY
             + SCORE_EMPTY_WEIGHT * empty
             + SCORE_MERGES_WEIGHT * merges
             + SCORE_12_MERGES_WEIGHT * onetwo_merges
             - SCORE_MONOTONICITY_WEIGHT * std::min(monotonicity_left, monotonicity_right)
+            - SCORE_SMOOTHNESS_WEIGHT * smoothness
             - SCORE_SUM_WEIGHT * sum;
 
         // execute a move to the left
@@ -738,6 +746,9 @@ void play_game(get_move_func_t get_move) {
     }
 
     print_board(board);
+    // summary
+    // hack: use stderr to output the result
+    fprintf(stderr, "%d , %.0f , %d\n", moveno, score_board(board), get_max_rank(board) );
     printf("\nGame over. Your score is %.0f. The highest rank you achieved was %d.\n", score_board(board), get_max_rank(board));
 }
 
