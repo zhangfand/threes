@@ -68,7 +68,7 @@ static float SCORE_SMOOTHNESS_WEIGHT = 5.0f;
 static float SCORE_SUM_POWER = 3.5f;
 static float SCORE_SUM_WEIGHT = 11.0f;
 static float SCORE_MERGES_WEIGHT = 700.0f;
-static float SCORE_12_MERGES_WEIGHT = 0.0f;
+static float SCORE_12_MERGES_WEIGHT = 10.0f;
 static float SCORE_EMPTY_WEIGHT = 270.0f;
 static float SCORE_VALID_ACTION_WEIGHT = 10.0f;
 
@@ -573,6 +573,14 @@ float score_toplevel_move(board_t board, deck_t deck, tileset_t tileset, int mov
     return res;
 }
 
+static char move_map(int move) {
+    switch (move) {
+        case 0: return 'U';
+        case 1: return 'D';
+        case 2: return 'L';
+        case 3: return 'R';
+    }
+}
 /* Find the best move for a given board, deck and upcoming tile.
  * 
  * Note: the deck must represent the deck BEFORE the given tile was drawn.
@@ -598,7 +606,7 @@ int find_best_move(board_t board, deck_t deck, tileset_t tileset) {
             bestmove = move;
         }
     }
-
+    printf("Take move %c.\n", move_map(bestmove));
     return bestmove;
 }
 
