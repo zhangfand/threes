@@ -152,7 +152,7 @@ void init_tables() {
         }
         float smoothness = 0;
         for (int i = 1; i < 4; ++i) {
-            smoothness += std:abs(line[i-1]-line[i])
+            smoothness += abs(line[i-1]-line[i]);
         }
         
         
